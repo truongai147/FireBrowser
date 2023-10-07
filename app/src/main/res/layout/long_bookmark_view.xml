@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="10dp"
+    app:contentPadding="10dp"
+    app:cardCornerRadius="10dp">
+
+    <TextView
+        android:layout_gravity="center_vertical|start"
+        android:id="@+id/bookmarkIcon"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="15sp"
+            android:layout_gravity="center_vertical|start"
+            android:id="@+id/bookmarkName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/bookmark"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:textSize="13sp"
+            android:layout_gravity="center_vertical|start"
+            android:id="@+id/bookmarkUrl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            tools:text="https://www.google.com/"
+            android:textColor="@color/color737373" />
+    </LinearLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>

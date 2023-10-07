@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_gradient"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".fragment.HomeFragment">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/browserIcon"
+        android:layout_width="220dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_logo" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="24dp"
+        android:background="@drawable/custom_design"
+        android:gravity="center_vertical|start"
+        android:hint="@string/search_hint"
+        android:paddingHorizontal="0dp"
+        android:queryHint="@string/search_hint"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:defaultQueryHint="@string/search_hint"
+        app:iconifiedByDefault="false"
+        app:queryBackground="@android:color/transparent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:nestedScrollingEnabled="false"
+        app:fastScrollEnabled="false"
+        tools:itemCount="2"
+        tools:listitem="@layout/bookmark_view" />
+
+
+    <TextView
+        android:id="@+id/viewAllBtn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical|end"
+        android:layout_marginEnd="20dp"
+
+        android:gravity="center"
+        android:text="@string/view_all"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+
+</LinearLayout>
